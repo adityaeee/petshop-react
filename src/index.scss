@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rancho&display=swap");
+
+$light: #eef9ff;
+$dark: #0c0c04;
+$primary: #aacbd8;
+$secondary: #567272;
+$info: #1fdfc5;
+$success: #0bd6dd;
+$warning: #efd103;
+$danger: #ff1521;
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
